@@ -1,0 +1,10 @@
+{
+  "training": {
+    "sequence_length": 128,
+    "epochs": 1,
+    "steps_per_epoch": 1,
+    "batch_per_domain": 2,
+    "patience": 1
+  },
+  "model": {"hidden": 8, "min_support": 2}
+}

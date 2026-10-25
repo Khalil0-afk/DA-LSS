@@ -1,0 +1,22 @@
+{
+  "synthetic_only": true,
+  "completed": [
+    "decode",
+    "matching",
+    "raw_segments",
+    "features",
+    "capacity",
+    "power_arithmetic",
+    "resources",
+    "vehicle_adaptation"
+  ],
+  "adaptation": {
+    "updates_completed": 40,
+    "best_source_val_rmse": 0.038359706201449593,
+    "adaptation_window_count": 128,
+    "held_out_ev_test_records_loaded": false,
+    "target_soh_used": false
+  },
+  "real_vehicle_accuracy_reproduced": false,
+  "synthetic_power_trace_is_not_a_hardware_measurement": true
+}

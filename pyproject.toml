@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "da-lss"
+version = "0.3.0"
+description = "Independent, auditable DA-LSS battery SOH research implementation"
+readme = "README.md"
+license = {file = "LICENSE.md"}
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.23,<3", "torch>=2.8,<3"]
+
+[project.optional-dependencies]
+analysis = ["matplotlib>=3.6", "scikit-learn>=1.2"]
+data = ["h5py>=3.8"]
+tuning = ["optuna>=3.5"]
+profiling = ["psutil>=5.9"]
+supplementary = ["reportlab>=4", "matplotlib>=3.6"]
+all = ["matplotlib>=3.6", "scikit-learn>=1.2", "h5py>=3.8", "optuna>=3.5", "psutil>=5.9"]
+
+[project.scripts]
+da-lss = "da_lss.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["da_lss*"]

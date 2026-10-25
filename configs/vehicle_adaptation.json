@@ -1,0 +1,12 @@
+{
+  "adaptation_vehicle_count": 4,
+  "test_vehicle_count": 20,
+  "windows_per_vehicle": 32,
+  "stride": 32,
+  "epochs": 10,
+  "updates_per_epoch": 4,
+  "batch_per_domain": 128,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.0001,
+  "seed": 2026
+}

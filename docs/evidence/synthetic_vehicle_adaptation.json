@@ -1,0 +1,7 @@
+{
+  "updates_completed": 40,
+  "best_source_val_rmse": 0.038359706201449593,
+  "adaptation_window_count": 128,
+  "held_out_ev_test_records_loaded": false,
+  "target_soh_used": false
+}

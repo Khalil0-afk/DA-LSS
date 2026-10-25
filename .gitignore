@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+data/**
+!data/**/
+!data/**/*.md
+!data/MIT data/**/*.csv
+!data/HUST data/**/*.csv
+runs/
+*.pt
+*.pth
+*.ts
+*.pdf
+.env
+.DS_Store
+!examples/synthetic/best.pt
+!examples/synthetic/model.ts
+!supplementary/Supplementary_Methods.pdf

@@ -1,0 +1,25 @@
+{
+  "synthetic_only": true,
+  "paper_accuracy_reproduced": false,
+  "python": "D:\\ProgramData\\Anaconda3\\envs\\pytorch\\python.exe",
+  "device": "cpu",
+  "completed": [
+    "tests",
+    "demo",
+    "audit",
+    "predict",
+    "export",
+    "replay",
+    "report",
+    "benchmark",
+    "crossval",
+    "ablation",
+    "sensitivity",
+    "sensitivity_plot",
+    "tuning",
+    "clustering",
+    "group_score",
+    "group_crossval",
+    "heatmap"
+  ]
+}

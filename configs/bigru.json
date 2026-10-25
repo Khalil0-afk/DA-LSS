@@ -1,0 +1,4 @@
+{
+  "training": {"use_gate": false, "lambda_aux": 0.0},
+  "model": {"hidden": 64, "backbone": "bigru"}
+}

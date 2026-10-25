@@ -1,0 +1,58 @@
+{
+  "macs_per_window": 2261568,
+  "other_accounted_flops": 116702,
+  "accounted_mflops_per_window": 4.639838,
+  "macs_per_new_valid_point_stride32": 70674.0,
+  "accounted_mflops_per_new_valid_point_stride32": 0.1449949375,
+  "convention": "one multiply-add is two FLOPs; dense/Conv1d hooks plus explicit gate matrix product",
+  "other_included": [
+    "bias additions",
+    "step offset",
+    "ZOH scalar arithmetic",
+    "six recurrence operations per state point",
+    "two temporal means",
+    "negative A",
+    "health-gate scalar arithmetic"
+  ],
+  "unaccounted_operators": [
+    "InstanceNorm implementation",
+    "softplus",
+    "exp/expm1",
+    "softmax implementation"
+  ],
+  "is_complete_hardware_instruction_count": false,
+  "domain_classifier_included": false,
+  "inference_parameters": 18178,
+  "checkpoint_sha256": "58d78b4d01360c5c062cd11a380e0e4b830554bb40d02184d4e88adfd6fa0461",
+  "exported_model_sha256": "e5bb2adcd61e164230db42a9f3d9c0ff911fcee07236bcea96e98c51e0002982",
+  "torch_version": "2.8.0+cu128",
+  "parameter_millions": 0.018178,
+  "exported_model_mb": 0.102765,
+  "inference_latency_mean_ms": 2.564401999999979,
+  "end_to_end_latency_mean_ms": 13.538322999999993,
+  "inference_latency_p95_ms": 2.9988650000000394,
+  "peak_process_rss_mb_sampled": 434.233344,
+  "rss_sampling_interval_ms": 1,
+  "peak_cuda_allocated_mb": null,
+  "device": "cpu",
+  "precision": "float32",
+  "batch_size": 1,
+  "sequence_length": 128,
+  "warmup": 10,
+  "repetitions": 100,
+  "end_to_end_includes": [
+    "feature extraction",
+    "window organization",
+    "source normalization",
+    "tensor transfer",
+    "inference",
+    "scalar output"
+  ],
+  "end_to_end_excludes": [
+    "waiting to acquire a full window",
+    "CAN acquisition/decoding and asynchronous signal matching"
+  ],
+  "memory_scope": "sampled process RSS including runtime; CUDA allocator peak reported separately",
+  "power_w": null,
+  "energy_per_window_mj": null
+}

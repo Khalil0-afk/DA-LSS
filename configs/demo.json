@@ -1,0 +1,4 @@
+{
+  "training": {"epochs": 3, "steps_per_epoch": 6, "batch_per_domain": 8, "patience": 3},
+  "model": {"hidden": 64}
+}

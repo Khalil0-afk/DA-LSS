@@ -1,0 +1,9 @@
+{
+  "origin": "synthetic byte-aligned example; not an OEM DBC or a real vehicle calibration",
+  "messages": [
+    {"frame_id": 256, "signals": [
+      {"name": "cell_voltage_v", "scope": "cell", "byte_offset": 0, "byte_length": 2, "byte_order": "little", "signed": false, "scale": 0.001, "offset": 0},
+      {"name": "pack_current_a", "scope": "pack", "byte_offset": 2, "byte_length": 2, "byte_order": "little", "signed": true, "scale": 0.01, "offset": 0}
+    ]}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "outlier_sigma": 3,
+  "smoothing": 15,
+  "smoothing_direction": "trailing",
+  "boundary": "valid_only_no_padding",
+  "nonfinite_samples": "remove_joint_voltage_current_rows",
+  "entropy_bins": 32,
+  "entropy_voltage_range_v": [2.0, 4.5],
+  "entropy_log_base": "e",
+  "sequence_length": 128,
+  "training_window_stride": 1,
+  "deployment_window_stride": 32,
+  "insufficient_segment": "error",
+  "insufficient_battery": "exclude_by_input_length_before_partition",
+  "origin": "explicit completion choices where the response does not give numeric settings"
+}

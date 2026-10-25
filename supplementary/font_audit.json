@@ -1,0 +1,60 @@
+{
+  "body_font": "Times New Roman",
+  "equation_letter_fonts": [
+    "Times New Roman",
+    "Times New Roman Italic"
+  ],
+  "equation_count": 32,
+  "equations_are_vector_text": true,
+  "equation_images_used": false,
+  "font_files_distributed": false,
+  "math_font_postscript_names": [
+    "STIXGeneral-Regular",
+    "STIXSizeTwoSym-Regular",
+    "TimesNewRomanPS-ItalicMT",
+    "TimesNewRomanPSMT"
+  ],
+  "times_compatible_symbol_fallbacks": [
+    {
+      "equation": 11,
+      "symbol": "\u221a",
+      "font": "STIXSizeTwoSym-Regular"
+    },
+    {
+      "equation": 26,
+      "symbol": "\u2208",
+      "font": "STIXGeneral-Regular"
+    },
+    {
+      "equation": 30,
+      "symbol": "\u2208",
+      "font": "STIXGeneral-Regular"
+    }
+  ],
+  "pdf_page_count": 7,
+  "pdf_font_resources": {
+    "/AAAAAA+TimesNewRomanPSMT": {
+      "embedded": true,
+      "subtype": "/TrueType"
+    },
+    "/AAAAAA+TimesNewRomanPS-BoldMT": {
+      "embedded": true,
+      "subtype": "/TrueType"
+    },
+    "/AAAAAA+TimesNewRomanPS-ItalicMT": {
+      "embedded": true,
+      "subtype": "/TrueType"
+    },
+    "/AAAAAA+STIXSizeTwoSym-Regular": {
+      "embedded": true,
+      "subtype": "/TrueType"
+    },
+    "/AAAAAA+STIXGeneral-Regular": {
+      "embedded": true,
+      "subtype": "/TrueType"
+    }
+  },
+  "raster_image_count": 0,
+  "all_fonts_embedded": true,
+  "pdf_sha256": "5d7d52f93e330a87e45dde6bb3d5233c806cfa14bbf1da252e338deedf76f325"
+}

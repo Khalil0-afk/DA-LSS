@@ -1,0 +1,66 @@
+{
+  "partition_combinations_per_direction": 20,
+  "note": "Overlapping partitions; SD is not a confidence interval",
+  "results": {
+    "synthetic_source->synthetic_target": {
+      "pooled_windows": {
+        "rmse": {
+          "mean": 0.0688415952151863,
+          "std_ddof1": 0.010514447397008124
+        },
+        "mae": {
+          "mean": 0.06682554891575938,
+          "std_ddof1": 0.010711198340660866
+        },
+        "mape_percent": {
+          "mean": 8.073189942529238,
+          "std_ddof1": 1.4401544754387443
+        }
+      },
+      "macro_battery": {
+        "rmse": {
+          "mean": 0.06721633717818398,
+          "std_ddof1": 0.010574777443749139
+        },
+        "mae": {
+          "mean": 0.06682554891575938,
+          "std_ddof1": 0.010711198340660864
+        },
+        "mape_percent": {
+          "mean": 8.073189942529238,
+          "std_ddof1": 1.4401544754387443
+        }
+      }
+    },
+    "synthetic_target->synthetic_source": {
+      "pooled_windows": {
+        "rmse": {
+          "mean": 0.11555484672338179,
+          "std_ddof1": 0.01124494433336387
+        },
+        "mae": {
+          "mean": 0.11366179013165871,
+          "std_ddof1": 0.01186424931105018
+        },
+        "mape_percent": {
+          "mean": 13.900375308602946,
+          "std_ddof1": 1.6212881521235125
+        }
+      },
+      "macro_battery": {
+        "rmse": {
+          "mean": 0.11403919992670379,
+          "std_ddof1": 0.011919631161287907
+        },
+        "mae": {
+          "mean": 0.11366179013165871,
+          "std_ddof1": 0.011864249311050182
+        },
+        "mape_percent": {
+          "mean": 13.900375308602946,
+          "std_ddof1": 1.6212881521235116
+        }
+      }
+    }
+  }
+}

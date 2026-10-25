@@ -1,0 +1,13 @@
+{
+  "sampler": "Optuna TPE",
+  "n_trials_default": 10,
+  "seed": 2026,
+  "objective": "source-validation pooled-window RMSE",
+  "early_stopping_patience": 15,
+  "learning_rate": {"low": 0.0001, "high": 0.003, "log": true},
+  "lambda_domain": {"low": 0.1, "high": 2.5},
+  "lambda_phy": {"low": 0, "high": 1.5},
+  "epsilon": [0.001, 0.005, 0.025],
+  "origin": "declared implementation protocol; original search budget and space were not supplied",
+  "invocation": "python -m da_lss tune --trials 10 --config configs/paper.json"
+}
