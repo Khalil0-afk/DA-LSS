@@ -16,6 +16,4 @@ runs/
 *.pdf
 .env
 .DS_Store
-!examples/synthetic/best.pt
-!examples/synthetic/model.ts
 !supplementary/Supplementary_Methods.pdf

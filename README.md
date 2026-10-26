@@ -81,6 +81,5 @@ The time tolerances above are examples and must follow the acquisition protocol.
 - [Data schema](docs/data.md)
 - [Response commitments and unresolved inconsistencies](docs/response_commitments.md)
 - [Verification record](docs/verification.md)
-- [Synthetic checkpoint and export](examples/synthetic/NOTICE.md)
 
-Repository: [Khalil0-afk/DA-LSS](https://github.com/Khalil0-afk/DA-LSS). The code uses the [MIT License](LICENSE.md); that license does not cover the manuscript, review correspondence, third-party data or third-party models. No original source document or private vehicle record is distributed. The repository includes English documentation, the supplementary PDF, supplied public-data feature tables and explicitly synthetic examples.
+Repository: [Khalil0-afk/DA-LSS](https://github.com/Khalil0-afk/DA-LSS). The code uses the [MIT License](LICENSE.md); that license does not cover the manuscript, review correspondence, third-party data or third-party models. No original source document or private vehicle record is distributed. The repository includes English documentation, the supplementary PDF and supplied public-data feature tables. Software checks generate synthetic inputs and models in the requested output directory at runtime.

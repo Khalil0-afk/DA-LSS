@@ -59,8 +59,11 @@ def main():
                                  "--output", output / "synthetic_energy.json"])
     voltage = np.tile(np.linspace(3.2, 3.4, 32), (128, 1))
     np.savez(output / "raw_window.npz", voltage=voltage, current=np.full_like(voltage, 1.5))
-    execute("resources", ["resources", "--checkpoint", root / "examples/synthetic/best.pt",
-                           "--raw-segments-npz", output / "raw_window.npz", "--exported-model", root / "examples/synthetic/model.ts",
+    execute("demo", ["demo", "--output", output / "synthetic", "--device", args.device])
+    checkpoint = output / "synthetic/run/best.pt"
+    execute("export", ["export", "--checkpoint", checkpoint, "--output", output / "export"])
+    execute("resources", ["resources", "--checkpoint", checkpoint,
+                           "--raw-segments-npz", output / "raw_window.npz", "--exported-model", output / "export/model.ts",
                            "--output", output / "resources", "--device", args.device])
     with (output / "adaptation.csv").open("w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
@@ -73,8 +76,8 @@ def main():
                                  0.5 + 0.02 * np.sin(cycle / 40), 0.025, ""])
     reserved = [f"reserved_test_{i:02d}" for i in range(20)]
     (output / "test_vehicles.json").write_text(json.dumps(reserved), encoding="utf-8")
-    execute("vehicle_adaptation", ["adapt-vehicle", "--checkpoint", root / "examples/synthetic/best.pt",
-                                    "--source-features", root / "examples/synthetic/features.csv",
+    execute("vehicle_adaptation", ["adapt-vehicle", "--checkpoint", checkpoint,
+                                    "--source-features", output / "synthetic/synthetic_features.csv",
                                     "--adaptation-features", output / "adaptation.csv", "--test-vehicles", output / "test_vehicles.json",
                                     "--config", root / "configs/vehicle_adaptation.json", "--output", output / "adapted",
                                     "--device", args.device])

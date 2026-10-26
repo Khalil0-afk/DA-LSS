@@ -18,7 +18,7 @@ def main():
         raise FileExistsError(output)
     files = [root / name for name in ("README.md", "LICENSE.md", "pyproject.toml",
                                       ".gitignore", "requirements-tested.txt")]
-    for directory in ("da_lss", "configs", "tests", "docs", "scripts", "examples", "supplementary", ".github"):
+    for directory in ("da_lss", "configs", "tests", "docs", "scripts", "supplementary", ".github"):
         files.extend(p for p in (root / directory).rglob("*")
                      if p.is_file() and "__pycache__" not in p.parts and p.suffix != ".pyc")
     files.extend(p for p in (root / "data").rglob("*.md") if p.is_file())
